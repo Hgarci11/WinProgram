@@ -1,0 +1,36 @@
+#leftup {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-top-left-radius: 100%;
+    float: left;
+    
+}
+
+#rightup {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-top-right-radius: 100%;
+    float: left;
+    
+
+}
+
+#leftdown {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-bottom-left-radius: 100%;
+    float: left;
+    clear: left;
+}
+
+#rightdown {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-bottom-right-radius: 100%;
+    float: left;
+    
+}
