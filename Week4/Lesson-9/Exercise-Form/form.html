@@ -1,0 +1,82 @@
+<!-- 
+-Create a Form and add validations using jQuery
+
+-Utilize the html and css provided below
+
+-Create a function that will fire when the submit <button> is clicked
+
+-Make sure the function loaded after the DOM
+
+Inside the function:
+
+1.create variables for each of the form inputs
+    -use jQuery to accomplish this task
+    -(think about querySelector)
+2.Create an array named required
+    -store the variables you've name, email, and phone number
+3.Utilize a for loop to iterate of the entire required array
+4.Inside the for loop:
+    -Use an if statement to check the value of each array item
+    -if the array item is equal to an empty string ("")
+    -Populate the message <p> with the following text: 
+    "Please Fill Out Required Fields"
+    -Add the warning class to this message
+5.Attach the warning class to the array item's <label> 
+note: You want the label to turn red, if the field is empty
+6.Once the field has something other than a blank string. make sure the warning class is removed
+7.Close out the for loop
+8.Utilize another if statement
+    -Verify that no <label>'s have the warning class
+    -if true
+        -remove the form from the DOM
+        -manipulate the <h2> to say: "Thanks for your feedback!"
+9.Close out your function
+
+10.test it out! -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="pre-form">
+        <h2> We'd love to hear your thoughts!</h2>
+    </div>
+    <div class="form-container">
+        <form id="form" name="form">
+            <h3> Contact Us Here:</h3>
+            <p id="message"></p>
+
+            <label>Name:</label>
+            <input id="name" placeholder="Name" type="text"><br>
+            <label>Email:</label>
+            <input id="email" placehodler="Email" type="email"><br>
+            <label>Number:</label>
+            <input id="phone" placeholder="10 digit phone number." type="tel"><br>
+            <label>Message:</label>
+            <textarea id="message" placeholder="Your thoughts here..."></textarea><br>
+            <input id="submit" type="button" value="Send It!">
+            
+        </form>    
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
