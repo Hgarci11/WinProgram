@@ -1,0 +1,16 @@
+{
+  "name": "test1",
+  "version": "1.4.5",
+  "description": "Exercise 1 of Lesson 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "Hugo Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "request-promise": "^4.2.4"
+  }
+}

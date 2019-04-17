@@ -1,0 +1,17 @@
+{
+  "name": "exercise2",
+  "version": "1.0.0",
+  "description": "This is exercise 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "author": "Hugo Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
